@@ -66,10 +66,10 @@ class saurclient extends eqLogic {
         if( $ret_login == false){
             return false ;
         }
-      else log::add('saurclient', 'debug',  __METHOD__.'(ln '.__LINE__.')'.': $ret_login='.var_export( $ret_login ,true) );
-      
-      log::add('saurclient', 'debug',  __METHOD__.'(ln '.__LINE__.')'.': $ret_login='.$ret_login );
-      log::add('saurclient', 'debug',  __METHOD__.'(ln '.__LINE__.')'.': defaultSectionId='.$ret_login['defaultSectionId'] );
+        else log::add('saurclient', 'debug',  __METHOD__.'(ln '.__LINE__.')'.': $ret_login='.var_export( $ret_login ,true) );
+
+        log::add('saurclient', 'debug',  __METHOD__.'(ln '.__LINE__.')'.': $ret_login='.$ret_login );
+        log::add('saurclient', 'debug',  __METHOD__.'(ln '.__LINE__.')'.': defaultSectionId='.$ret_login['defaultSectionId'] );
       
         if( is_numeric( $ret_login['defaultSectionId'] ) ){
             log::add('saurclient', 'debug',  __METHOD__.'(ln '.__LINE__.')'.': defaultSectionId='.$ret_login['defaultSectionId'] );
@@ -77,9 +77,9 @@ class saurclient extends eqLogic {
             $eqLogic = eqLogic::byLogicalId( $ret_login['defaultSectionId'] , 'saurclient', false) ;
           
             if( ! is_object( $eqLogic ) ){
-            log::add('saurclient', 'debug',  __METHOD__.'(ln '.__LINE__.')'.': Je vais créer le module' );
-            $eqLogic = self::createDevice( $ret_login['defaultSectionId'] ) ;
-            $return['new']++ ;
+                log::add('saurclient', 'debug',  __METHOD__.'(ln '.__LINE__.')'.': Je vais créer le module' );
+                $eqLogic = self::createDevice( $ret_login['defaultSectionId'] ) ;
+                $return['new']++ ;
             }
             else{
                 log::add('saurclient', 'debug',  __METHOD__.'(ln '.__LINE__.')'.': Module '.$ret_login['defaultSectionId'].' déjà présent' );
@@ -95,7 +95,7 @@ class saurclient extends eqLogic {
             $ret_index = api_saurclient::get_Meter_indexes_last( $ret_login['defaultSectionId'] , $ret_login['token']['access_token'] ) ;
           
             if( $ret_index == false ){
-              return false ;
+                return false ;
             }
             else{
                 if( $manuel ) $eqLogic->CreateCmds( $ret_login['defaultSectionId'] , $ret_index ) ;
