@@ -1,0 +1,9 @@
+{
+    "meterIndexId": "123",
+    "meterId": "123",
+    "meter": null,
+    "previousMeterIndexId": "123",
+    "indexValue": 1928,
+    "readingDate": "2025-10-24T00:00:00",
+    "sectionSubscriptionId": null
+}

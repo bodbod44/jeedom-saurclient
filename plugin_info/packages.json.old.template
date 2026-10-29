@@ -1,0 +1,23 @@
+{
+  "pre-install": {
+  },
+  "apt": {
+  },
+  "pip3": {
+    "pyserial" : {"reinstall" : true},
+    "requests" : {"reinstall" : true}
+  },
+  "npm": {
+    "plugins/saurclient/ressources/demond"  : {}
+  },
+  "composer": {
+       "plugins/saurclient"  : {}
+  },
+  "yarn": {
+    "plugins/saurclient/ressources/demond"  : {}
+  },
+  "plugin": {
+  },
+  "post-install": {
+  }
+}

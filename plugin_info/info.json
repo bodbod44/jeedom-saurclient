@@ -1,0 +1,72 @@
+{
+    "id": "saurclient",
+    "name": "Saur Client",
+    "pluginVersion": "0.1",
+    "specialAttributes": {
+        "object": {
+            "toto": {
+                "name": {
+                    "fr_FR": "Plop je suis un attribut sp\u00e9cial"
+                },
+                "type": "input"
+            },
+            "toto2": {
+                "name": {
+                    "fr_FR": "Plop je suis un attribut sp\u00e9cial number"
+                },
+                "type": "number"
+            }
+        },
+        "user": {
+            "toto": {
+                "name": {
+                    "fr_FR": "Plop je suis un attribut sp\u00e9cial"
+                },
+                "type": "select",
+                "values": [
+                    {
+                        "value": "1",
+                        "name": "valeur 1"
+                    },
+                    {
+                        "value": "plop",
+                        "name": "valeur plop"
+                    }
+                ]
+            }
+        }
+    },
+    "description": {
+        "fr_FR": "Plugin permettant de lire les données Saur Client"
+    },
+    "licence": "AGPL",
+    "author": "bodbod44",
+    "require": "4.2",
+    "os": {
+        "min": 10,
+        "max": 13.99
+    },
+    "category": "energy",
+    "hasDependency": false,
+    "hasOwnDeamon": false,
+    "changelog_beta": "https://github.com/bodbod44/jeedom-saurclient/blob/beta/docs/fr_FR/changelog_beta.md",
+    "changelog": "https://github.com/bodbod44/jeedom-saurclient/blob/master/docs/fr_FR/changelog.md",
+    "documentation_beta": "https://github.com/bodbod44/jeedom-saurclient/blob/beta/docs/fr_FR/index.md",
+    "documentation": "https://github.com/bodbod44/jeedom-saurclient/blob/master/docs/fr_FR/index.md",
+    "link": {
+        "forum": "Lien vers le forum",
+        "video": "Lien vers une video"
+    },
+    "language": [
+        "fr_FR"
+    ],
+    "compatibility": [
+        "smart",
+        "luna",
+        "atlas",
+        "rpi",
+        "docker",
+        "diy",
+        "mobile"
+    ]
+}
